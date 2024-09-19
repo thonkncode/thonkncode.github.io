@@ -1,0 +1,82 @@
+- name: "Debojoti Das Soumya"
+  image: /assets/img/placeholder.jpg
+  description: "IOI 2024 Gold Medalist"
+  codeforces: Soumya1
+  ioi: 7675
+  github: debojoti-soumya
+  facebook: debojoti.das.soumya
+
+- name: "Farhan Ahmad"
+  image: /assets/img/placeholder.jpg
+  description: "IOI 2022 Silver Medalist"
+  codeforces: Farhan132
+  ioi: 7402
+  github: farhan132
+  facebook: farhan.ru.school
+
+- name: "Nafis Ul Haque Shifat"
+  image: /assets/img/placeholder.jpg
+  description: "IOI 2022 Bronze Medalist"
+  codeforces: qwerty190
+  ioi: 7403
+  github: nafis277
+  facebook: nafis.shifat121
+
+- name: "Jarif Rahman"
+  image: /assets/img/placeholder.jpg
+  description: "IOI 2024 Bronze Medalist"
+  codeforces: Jarif_Rahman
+  ioi: 7676
+  github: Jarif-Rahman
+  facebook: profile.php?id=100084048132252
+
+- name: "Akib Azmain Turja"
+  image: /assets/img/placeholder.jpg
+  description: "IOI 2024 Bronze Medalist"
+  codeforces: AkibAzmain
+  ioi: 8251
+  github: AkibAzmain
+  facebook: akib.azmain.turja.aat
+
+- name: "S M A Nahian"
+  image: /assets/img/placeholder.jpg
+  description: "IMO 2024 Bronze Medalist"
+  codeforces: Nahian9696
+  imo: 31878
+  github: SMANahian
+  facebook: SMANahian
+
+- name: "Navid Tawsif"
+  image: /assets/img/placeholder.jpg
+  description: "APIO 2024 Silver Medalist"
+  codeforces: colossal_pepe
+  github: colossal-pepe
+  facebook: navid.tawsif
+
+- name: "Abrar Al Samit"
+  image: /assets/img/placeholder.jpg
+  description: "IOI 2023 Participant"
+  codeforces: VenomInVein
+  ioi: 7970
+  facebook: abrar.alsamit.9
+
+- name: "Desh Acharjee"
+  image: /assets/img/placeholder.jpg
+  description: "IOI 2024 Participant"
+  codeforces: Desh01
+  ioi: 8252
+  facebook: Desh037
+
+- name: "S M Mohiuddin Sami"
+  image: /assets/img/placeholder.jpg
+  description: "BdOI 2024 Camper"
+  codeforces: shadow_sami
+  github: mohiuddinsami
+  facebook: sm.mohiuddin.sami
+
+- name: "Wali E Zaman"
+  image: /assets/img/placeholder.jpg
+  description: "BdOI 2024 Camper"
+  github: walizamanee
+  facebook: profile.php?id=61550617895616
+

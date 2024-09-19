@@ -1,44 +1,133 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> About - Thonk & Code</title>
-  <link rel="stylesheet" href="/assets/css/style.css">
-</head>
-<body>
-  <header>
-    <div class="container">
-      <nav>
-        <a href="/"><img class="logo" src="/assets/logo.png" alt="Thonk & Code Logo"></a>
-        <button class="menu-toggle" aria-label="Toggle menu">☰</button>
-        <ul id="nav-menu">
-          <li><a href="/">Home</a></li>
-          <li><a href="https://discord.gg/GU5dc79t">Join</a></li>
-        <li><a href="/blogs">Blogs</a></li>
-        <li><a href="/classes">Classes</a></li>
-        <li><a href="/about">About</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+---
+layout: default
+title: About
+---
 
-<main class="container">
-  <div class="blog text-center">
-    <h1>Under Construction</h1>
+<div class="blog">
+  <h1>About Us</h1>
+  <p>Over the years, the Bangladesh Olympiad in Informatics (BdOI) has seen remarkable growth, driven by a culture of
+    collaboration and mentorship. One of the key reasons for this success is the support from seniors who pass on their
+    knowledge and experiences to juniors.</p>
+  <p>We aim to continue this tradition, by introducing "Thonk & Code". We want to ensure that even beginners have the
+    support to start in the world of Competitive Programming and Informatics Olympiads and learn the thought process
+    needed for solving CP problems. Although this program is aimed for getting talented secondary school and college
+    students in BdOI, others including university students are also welcomed.</p>
+
+  <h1>Our Team</h1>
+  <div class="trainer-grid">
+
+    {% for trainer in site.data.trainers %}
+
+    <div class="trainer-card">
+      <img class="trainer-img" src="{{ trainer.image }}" alt="{{ trainer.name }}">
+      <div class="trainer-info">
+        <div class="trainer-name">{{ trainer.name }}</div>
+        <div class="trainer-achievements">
+          <p>{{ trainer.description }}</p>
+        </div>
+        <div class="social-links">
+
+          {% if trainer.codeforces %}
+          <a href="https://codeforces.com/profile/{{ trainer.codeforces }}" title="Codeforces">
+            <svg class="social-icon" version="1.1" fill="currentColor" viewBox="0 0 24 18" id="svg3" width="24"
+              height="18" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+              <defs id="defs3" />
+              <path
+                d="M 22.5,7.5 C 23.3,7.5 24,8.2 24,9 v 7.5 c 0,0.8 -0.7,1.5 -1.5,1.5 h -3 C 18.7,18 18,17.3 18,16.5 V 9 c 0,-0.8 0.7,-1.5 1.5,-1.5 z"
+                id="path1" />
+              <path
+                d="M 13.5,0 C 14.3,0 15,0.7 15,1.5 v 15 c 0,0.8 -0.7,1.5 -1.5,1.5 h -3 C 9.7,18 9,17.3 9,16.5 V 1.5 C 9,0.7 9.7,0 10.5,0 Z"
+                id="path2" />
+              <path
+                d="M 4.5,4.5 C 5.3,4.5 6,5.2 6,6 V 16.5 C 6,17.3 5.3,18 4.5,18 h -3 C 0.7,18 0,17.3 0,16.5 V 6 C 0,5.2 0.7,4.5 1.5,4.5 Z"
+                id="path3" />
+            </svg>
+          </a>
+          {% endif %}
+
+          {% if trainer.ioi %}
+          <a href="https://stats.ioinformatics.org/people/{{ trainer.ioi }}" title="IOI">
+            <svg version="1.1" class="social-icon" fill="currentColor" viewBox="0 0 754.26721 415.30988"
+              xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+              <defs id="defs1" />
+              <g id="layer1" style="display:inline">
+                <path
+                  d="m 363.27345,411.74061 c -29.6438,-3.43647 -47.69981,-8.62104 -69.5214,-19.96225 -26.11443,-13.57231 -46.38319,-30.69828 -63.12604,-53.33799 -4.8376,-6.5414 -9.48591,-11.89346 -10.32958,-11.89346 -0.93629,0 -1.53395,14.31404 -1.53395,36.73778 v 36.73779 L 111.37725,399.61204 3.992016,399.2016 3.5653956,358.88224 3.1387752,318.56287 H 15.699723 c 6.908521,0 18.058584,-0.46471 24.777917,-1.03271 l 12.216971,-1.03271 V 232.89942 149.3014 l -9.181637,-0.008 c -5.0499,-0.005 -16.187625,-0.4722 -24.750499,-1.03924 L 3.1936128,147.22292 V 107.5436 67.864271 h 22.9461702 22.94617 l 1.929555,6.891695 c 4.30546,15.377592 16.336609,29.652774 32.018424,37.990454 6.474584,3.4424 9.160752,3.82045 27.145708,3.82045 18.72686,0 20.45337,-0.26941 27.94411,-4.36051 15.96382,-8.7187 28.65856,-24.316089 31.86625,-39.152468 l 1.12203,-5.189621 h 23.82523 23.82522 v 35.129739 c 0,38.2279 0.79693,41.18885 7.75417,28.81011 5.64843,-10.05002 34.92828,-39.599384 47.93502,-48.376241 20.21487,-13.640847 46.12926,-24.112326 69.66011,-28.148226 5.26946,-0.903793 18.17921,-2.01677 28.68832,-2.473282 37.0475,-1.609331 73.58384,9.598263 107.32148,32.921084 13.53987,9.360093 35.40262,31.540955 44.95858,45.612735 11.10117,16.34721 11.44679,15.53825 11.44679,-26.79322 V 67.776586 l 22.68629,0.443044 22.68627,0.443045 1.8724,6.474052 c 4.48476,15.506601 16.65806,30.338763 30.63144,37.321873 7.7562,3.87612 30.39478,7.21316 38.559,5.6838 11.6578,-2.1838 23.32916,-7.82378 31.00587,-14.98306 9.47592,-8.83721 14.01148,-15.730008 17.70841,-26.911835 l 2.77164,-8.383234 H 727.47364 750.499 V 108.58283 149.3014 H 725.7485 700.998 v 83.03393 c 0,45.66866 -0.17964,83.57285 -0.3992,84.23154 -0.21956,0.65868 10.91817,1.39549 24.7505,1.63735 l 25.1497,0.43976 v 40.678 V 400 H 643.51297 536.52695 v -38.32335 c 0,-35.43922 -0.2103,-38.3223 -2.79442,-38.30938 -1.64793,0.008 -5.25636,3.83568 -8.79516,9.329 -21.0219,32.63256 -60.11391,61.02301 -99.05117,71.9356 -14.33858,4.01854 -49.05133,8.88776 -56.22552,7.88685 -0.87824,-0.12252 -3.7525,-0.47267 -6.38723,-0.77811 z M 215.56886,316.78782 c 0,-0.97629 -2.52246,-8.5098 -5.60546,-16.74115 -9.18924,-24.53448 -10.93108,-34.87806 -10.99917,-65.31613 -0.0666,-29.76127 1.86252,-42.34884 10.32846,-67.39444 2.57366,-7.61385 4.67937,-14.78642 4.67937,-15.93903 0,-1.63334 -5.10804,-2.09567 -23.1537,-2.09567 h -23.15369 v 84.63074 84.63073 h 23.9521 c 16.50703,0 23.95209,-0.55174 23.95209,-1.77505 z M 586.02794,233.93214 V 149.3014 h -23.68595 c -13.02729,0 -24.09664,0.41067 -24.59858,0.91261 -0.50194,0.50193 1.2632,5.71124 3.92251,11.57624 8.5706,18.90204 12.57413,38.20491 13.47232,64.95626 0.94701,28.20525 -1.76211,44.76903 -11.36082,69.46107 -3.24335,8.34332 -6.2853,16.78643 -6.75989,18.76248 l -0.86288,3.59281 h 24.93664 24.93665 z m -191.96289,77.57954 c 17.61837,-9.02373 29.89011,-27.89766 36.42565,-56.02266 3.30676,-14.23037 2.15155,-43.29582 -2.29155,-57.65512 -9.71872,-31.40929 -29.33071,-50.12931 -52.51786,-50.12931 -35.45664,0 -62.67425,47.36186 -56.34701,98.05043 3.97972,31.8823 18.18355,56.78917 37.55195,65.84857 11.23787,5.25643 26.81164,5.21792 37.17882,-0.0919 z"
+                  id="path14" />
+                <path
+                  d="M 91.195368,107.11134 C 71.640046,99.681838 57.807829,80.359808 56.291637,58.354812 53.130494,12.47611 112.70358,-15.392443 145.87766,16.446068 c 20.96113,20.117237 24.41443,48.705274 8.57458,70.984358 -9.98605,14.045604 -23.02207,21.045694 -42.17491,22.647104 -9.09329,0.76032 -12.555569,0.27318 -21.081962,-2.96619 z"
+                  id="path15" />
+                <path
+                  d="m 628.34331,108.75479 c -15.86717,-4.9923 -26.08021,-13.654277 -33.43638,-28.358396 -4.96488,-9.924222 -5.68537,-12.847311 -5.68537,-23.066005 0,-22.713706 10.33695,-38.60062 31.93612,-49.0827753 8.8129,-4.276932 12.18656,-5.03836 22.35529,-5.0455423 10.0116,-0.00707 13.53374,0.756357 21.47236,4.6541571 34.42315,16.9015025 42.26447,60.7974605 15.5061,86.8036135 -8.20636,7.975668 -13.88569,11.190488 -25.00241,14.152778 -9.794,2.60982 -18.72751,2.59079 -27.14571,-0.0578 z"
+                  id="path16" />
+              </g>
+            </svg>
+          </a>
+          {% endif %}
+
+          {% if trainer.imo %}
+          <a href="https://www.imo-official.org/participant_r.aspx?id={{ trainer.imo }}" title="IMO">
+            <svg width="29.497103" height="20" fill="currentColor" stroke="currentColor" version="1.1" id="svg3"
+              xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
+              xmlns:svg="http://www.w3.org/2000/svg">
+              <defs id="defs3" />
+              <clipPath id="CLIP_Circle_lower_half">
+                <path
+                  d="m 274,103 h 26 a 58,60 -90 0 1 -60,58 C 206,161 174.8,137.85 142.2,113.4 114.8,92.85 86,71 60,71 a 32,34 -90 0 0 -34,32 124,124 -180 0 0 248,0"
+                  id="path1" />
+              </clipPath>
+              <g id="g1" transform="matrix(0.10101749,0,0,0.10101749,-0.40407202,-0.40480178)">
+                <path id="Circle_lower_half" clip-path="url(#CLIP_Circle_lower_half)" d="M 240,103 A 90,90 0 1 1 150,13"
+                  stroke-width="18" fill="none" />
+              </g>
+              <use id="Circle_upper_half" xlink:href="#Circle_lower_half" x="-300" y="-206"
+                transform="matrix(-0.10101749,0,0,-0.10101749,-0.40407202,-0.40480178)" />
+              <clipPath id="CLIP_Loop_upper_left">
+                <path
+                  d="m 47,103 13,32 c 26,0 54.8,-21.85 82.2,-42.4 C 174.8,68.15 206,45 240,45 L 60,13 a 90,94 -90 0 0 0,180 l 90,13 A 103,103 -180 0 1 47,103 Z"
+                  id="path2" />
+              </clipPath>
+              <g id="g2" transform="matrix(0.10101749,0,0,0.10101749,-0.40407202,-0.40480178)">
+                <path id="Loop_upper_left" clip-path="url(#CLIP_Loop_upper_left)"
+                  d="m 150,103 c -30,22.5 -60,45 -90,45 a 45,47 -90 1 1 0,-90 c 30,0 60,22.5 90,45" stroke-width="18"
+                  fill="none" />
+              </g>
+              <use id="Loop_lower_right" xlink:href="#Loop_upper_left" x="-300" y="-206"
+                transform="matrix(-0.10101749,0,0,-0.10101749,-0.40407202,-0.40480178)" />
+              <clipPath id="CLIP_Loop_middle">
+                <circle r="77" cx="150" cy="103" id="circle2" />
+              </clipPath>
+              <path clip-path="url(#CLIP_Loop_middle)" d="m 60,148 c 30,0 60,-22.5 90,-45 30,-22.5 60,-45 90,-45"
+                stroke-width="18" fill="none" id="path3"
+                transform="matrix(0.10101749,0,0,0.10101749,-0.40407202,-0.40480178)" />
+            </svg>
+          </a>
+          {% endif %}
+
+          {% if trainer.github %}
+          <a href="https://github.com/{{ trainer.github }}" title="Github">
+            <svg xmlns="http://www.w3.org/2000/svg" class="social-icon" fill="currentColor" viewBox="0 0 16 16">
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+            </svg>
+          </a>
+          {% endif %}
+
+          {% if trainer.facebook %}
+          <a href="https://facebook.com/{{ trainer.facebook }}" title="facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" class="social-icon" fill="currentColor" class="bi bi-facebook"
+              viewBox="0 0 16 16">
+              <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+            </svg>
+          </a>
+          {% endif %}
+
+        </div>
+      </div>
+    </div>
+
+    {% endfor %}
+
+  </div>
 </div>
-</main>
-
-<footer>
-  <div class="container">
-    <p>&copy; 2024 Thonk & Code. All rights reserved.</p>
-  </div>
-</footer>
-
-<script>
-  document.querySelector('.menu-toggle').addEventListener('click', function() {
-    document.getElementById('nav-menu').classList.toggle('show');
-  });
-</script>
-</body>
-</html>
