@@ -196,21 +196,17 @@ footer {
     border-left: 4px solid #D4A017;
     padding: 1rem;
     overflow-x: auto;
-    font-family: 'Courier New', Courier, monospace;
   }
 
   code {
-    font-family: 'Courier New', Courier, monospace;
-    background-color: #f5f2f0;
-    padding: 2px 4px;
-    border-radius: 4px;
+    font-family: "Andale Mono", Courier, monospace;
   }
 }
 
 .trainer-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
+  gap: 25px;
   margin-top: 2rem;
 }
 
@@ -262,4 +258,59 @@ footer {
     width: auto;
     height: 20px;
   }
+}
+
+.blog-list {
+  display: grid;
+  gap: 2rem;
+  .blog-card {
+    background-color: #FFF2CC;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+
+  .blog-content {
+    padding: 1.5rem;
+  }
+
+  .blog-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #B8860B;
+  }
+
+  .blog-excerpt {
+    display: -webkit-box;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+
+  .read-more {
+    display: inline-block;
+    background-color: #D4A017;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #B8860B;
+    }
+  }
+}
+
+.blog-meta {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1rem;
 }

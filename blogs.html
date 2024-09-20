@@ -2,6 +2,29 @@
 layout: default
 title: Blogs
 ---
-<div class="blog text-center">
-    <h1>Coming Soon</h1>
+<div>
+  {% if site.posts.size == 0 %}
+  <div class="blog text-center">
+    <h1>No Blog Yet</h1>
+  </div>
+  {% else %}
+  <div class="blog">
+    <h1>Thonk & Code Blogs </h1>
+  </div>
+  <div class="blog-list">
+    {% for post in site.posts %}
+    <div class="blog-card">
+      <div class="blog-content">
+        <h2 class="blog-title">{{ post.title }}</h2>
+        <div class="blog-meta">
+          <span class="author">By {{ post.author }}</span> |
+          <span class="date">{{ post.date | date_to_string }}</span>
+        </div>
+        <div class="blog-excerpt">{{ post.excerpt }}</div>
+        <a href="{{ post.url }}" class="read-more">Read More</a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
 </div>
