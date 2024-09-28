@@ -2,6 +2,13 @@
 layout: default
 title: Classes
 ---
-<div class="blog text-center">
-    <h1>Coming Soon</h1>
+<div class="blog">
+  <h1>Classes</h1>
+  <div class="classes-list">
+    {% for class in site.classes %}
+    <a class="week-card" href="/classes/week-{{class.week}}">
+      <div class="week-header">Week {{class.week}} </div>
+    </a>
+    {% endfor %}
+  </div>
 </div>

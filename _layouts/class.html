@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+<div class="blog">
+    <h1> {{ page.title }} Activities</h1>
+    <div class="blog-meta">
+        <span class="date">{{ page.date | date_to_string }}</span>
+    </div>
+    {{ content }}
+</div>
