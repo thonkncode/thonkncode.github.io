@@ -5,3 +5,4 @@ _site/
 Gemfile.lock
 .vscode/**/*
 .idea/**/*
+.bundle/**/*
