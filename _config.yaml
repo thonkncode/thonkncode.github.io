@@ -1,2 +1,7 @@
 plugins:
   - jekyll-minifier
+
+collections:
+  classes:
+    output: true
+    permalink: /:collection/:name
