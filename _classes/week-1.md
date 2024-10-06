@@ -18,6 +18,18 @@ week: 1
 
 ## Codeforces Round 976 (Div. 2)
 We strongly suggest you to participate in this [contest](https://codeforces.com/blog/entry/134422). It will be held on [29 Sep 2024, 9:35 PM BST](https://www.timeanddate.com/worldclock/fixedtime.html?day=29&month=9&year=2024&hour=18&min=35&sec=0&p1=166). We will upload a video (or maybe do a live class) on the contest.
+<div class="ybox" markdown="1">
+### Update
+A discussion class has been done on this contest.
+<details>
+    <summary>Recording</summary>
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/hK4Kwj8Anu4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</details>
+
+</div>
+
 
 ## Problems (Beginner)
 <div class="ybox" markdown="1">
