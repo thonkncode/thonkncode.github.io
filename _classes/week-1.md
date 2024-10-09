@@ -33,33 +33,60 @@ A discussion class has been done on this contest.
 
 ## Problems (Beginner)
 <div class="ybox" markdown="1">
+
 - [Codeforces 4A - Watermelon](https://codeforces.com/problemset/problem/4/A)
 - [AtCoder ABC326A - 2UP3DOWN](https://atcoder.jp/contests/abc326/tasks/abc326_a)
 - [Codeforces 158B - Taxi](https://codeforces.com/problemset/problem/158/B)
 - [AtCoder ABC349A - Zero Sum Game](https://atcoder.jp/contests/abc349/tasks/abc349_a)
 - [Codeforces 1462B - Last Year's Substring](https://codeforces.com/problemset/problem/1462/B)
 - [Codeforces 460B - Little Dima and Equation](https://codeforces.com/problemset/problem/460/B)
-#### You can submit them on [vjudge](https://vjudge.net/contest/658969).
+#### You can submit them on [vjudge](https://vjudge.net/contest/658969). Update: [solution class](#update-solution-classes)
 </div>
 
 ## Problems (Intermediate)
 <div class="ybox" markdown="1">
+
 - [Codeforces 1811C - Restore the Array](https://codeforces.com/problemset/problem/1811/C)
 - [Codeforces 363B - Fence](https://codeforces.com/problemset/problem/363/B)
 - [Codeforces 1905B - Begginer's Zelda](https://codeforces.com/problemset/problem/1905/B)
 - [Codeforces 1884B - Haunted House](https://codeforces.com/problemset/problem/1884/B)
 - [AtCoder ABC355D - Intersecting Intervals](https://atcoder.jp/contests/abc355/tasks/abc355_d)
 - [Codeforces 1799B - Equalize by Divide](https://codeforces.com/problemset/problem/1799/B)
-#### You can submit them on [vjudge](https://vjudge.net/contest/658972).
+#### You can submit them on [vjudge](https://vjudge.net/contest/658972). Update: [solution class](#update-solution-classes)
 </div>
 
 ## Problems (Advanced)
 <div class="ybox" markdown="1">
+
 - [AtCoder ABC301D - Bitmask](https://atcoder.jp/contests/abc301/tasks/abc301_d)
 - [Codeforces 1352F - Binary String Reconstruction](https://codeforces.com/problemset/problem/1352/F)
 - [Codeforces 1943A - MEX Game 1](https://codeforces.com/problemset/problem/1943/A)
 - [Codeforces 1864C - Divisor Chain](https://codeforces.com/problemset/problem/1864/C)
 - [Codeforces 1794C - Scoring Subsequences](https://codeforces.com/problemset/problem/1794/C)
 - [Codeforces 1844C - Particles](https://codeforces.com/problemset/problem/1844/C)
-#### You can submit them on [vjudge](https://vjudge.net/contest/658970).
+#### You can submit them on [vjudge](https://vjudge.net/contest/658970). Update: [solution class](#update-solution-classes)
+</div>
+
+
+## Update: Solution Classes
+<div class="ybox" markdown="1">
+<ul>
+    <details>
+        <summary>Beginner</summary>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/sIt9u-cahqk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div></details>
+    <details>
+        <summary>Intermediate</summary>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/gjzMeIDwdaY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </details>
+    <details>
+        <summary>Advanced</summary>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/Y3U3JcEawAY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </details>
+</ul>
 </div>
