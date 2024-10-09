@@ -207,7 +207,6 @@ footer {
       color: #D4A017;
       text-decoration: none;
       transition: color 0.3s;
-      padding-bottom: 2px;
       &:hover {
         color: #B8860B;
       }
@@ -311,6 +310,7 @@ footer {
     margin-bottom: 1rem;
     overflow: hidden;
     -webkit-line-clamp: 3;
+    line-clamp: 3;
     -webkit-box-orient: vertical;
   }
   
