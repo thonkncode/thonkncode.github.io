@@ -1,6 +1,6 @@
 ---
 layout: class
-date: 2024-10-30
+date: 2024-11-03
 week: 3
 ---
 
