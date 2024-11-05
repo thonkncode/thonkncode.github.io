@@ -3,6 +3,8 @@
 source "https://rubygems.org"
 
 # gem "jekyll"
-gem "github-pages"
-gem "jekyll-minifier"
+gem "github-pages", "~> 232"
+gem "jekyll-minifier", "~> 0.1"
 
+
+gem "erb", "~> 4.0"
