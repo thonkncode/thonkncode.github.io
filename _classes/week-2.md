@@ -1,6 +1,6 @@
 ---
 layout: class
-date: 2024-10-17
+date: "2024-10-17"
 week: 2
 ---
 
